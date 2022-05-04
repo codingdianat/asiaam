@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-auto-rows: minmax(5px, auto);
+    grid-template-areas: "header" "main_content" "footer";
+    height: 50vh;
+    background-color: rgb(179, 126, 113);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+#footer{
+    grid-area: footer;
+}
+
+.main{
+    display: grid;
+    grid-area: main_content;
+    grid-template-areas: "mappanel" "content";
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#map{
+    height:80vh;
+    grid-area: mappanel;
+}
+
+#contents{
+    grid-area: content;
+}
+ul {
+    margin-left: 2in;
+    padding-left: 2in;
+}
+
+ol {
+    margin-left: 2in;
+    padding-left: 2in;
+}
+li {
+    margin-left: 1em;
+}
+
